@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+	int select, pay, change;
+
+
+	cout << "Select your order:" << endl << "[1]pizza (P199)" << endl << "[2] Fries (P99)" << endl << "[3]Coke (P39)" << endl << "choice: ";
+	cin >> select;
+
+	if (select == 1)
+	{
+		cout << "Input payment: ";
+		cin >> pay;
+
+		if (pay < 199)
+		{
+		cout << "You don't have enough funds." <<endl;
+		}
+
+		else if (pay > 199)
+		{
+			change = pay - 199;
+			cout <<"You have ordered Pizza!" <<endl << "change: P" << change <<endl;
+		}
+
+	}
+
+		if (select == 2)
+	{
+		cout << "Input payment: ";
+		cin >> pay;
+
+		if (pay < 99)
+		{
+		cout << "You don't have enough funds." <<endl;
+		}
+
+		else if (pay > 99)
+		{
+			change = pay - 99;
+			cout <<"You have ordered Pizza!" <<endl << "change: P" << change <<endl;
+		}
+		
+	}
+		if (select == 3)
+	{
+		cout << "Input payment: ";
+		cin >> pay;
+
+		if (pay < 39)
+		{
+		cout << "You don't have enough funds." <<endl;
+		}
+
+		else if (pay > 39)
+		{
+			change = pay - 39;
+			cout <<"You have ordered Pizza!" <<endl << "change: P" << change <<endl;
+		}
+		
+	}
+
+	system("PAUSE");
+	return 0;
+}
